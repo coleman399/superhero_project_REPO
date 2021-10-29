@@ -12,8 +12,8 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Superhero',
-            fields=[
+            name = 'Superhero',
+            fields = [
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=50)),
                 ('alter_ego', models.CharField(max_length=50)),

@@ -1,7 +1,11 @@
 from django.urls import path
-from superheroes import views
+from . import views
 
 app_name = 'superheroes'
 urlpatterns = [
-    path('index/', views.index, name = 'index')
+    path('', views.index, name = 'index'),
+    path('<int:hero_id>/', views.detail, name = 'detail'),
+    path('create/', views.create, name = 'create'),
+    path('edit/<int:hero_id>', views.edit, name ='edit'),
+    path('delete/<int:hero_id>', views.delete, name = 'delete')
 ]

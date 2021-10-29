@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{specific_superhero.name}}</title>
+</head>
+
+<body>
+    <h1>{{specific_superhero.name}} Details</h1>
+    <ul>
+        {% if specific_superhero %}
+        <li><h2>Alter Ego: {{specific_superhero.alter_ego}}</h2></li>
+        <li><h2>Primary Ability: {{specific_superhero.primary_ability}}</h2></li>
+        <li><h2>Secondary Ability: {{specific_superhero.secondary_ability}}</h2></li>
+        <li><h2>Catchphrase: "{{specific_superhero.catchphrase}}"</h2></li>
+        {% endif %}
+    </ul>
+        <a href="{% url 'superheroes:index' %}">Main Menu</a>
+</body>
+
+</html>

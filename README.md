@@ -6,3 +6,5 @@ python manage.py runserver                  <----- start server
 python manage.py startapp superheroes       <----- create app
 python manage.py makemigrations             <----- create object in app
 python manage.py migrate                    <----- transfer to database
+
+url path, view, html file to create a new webpage.
